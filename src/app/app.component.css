@@ -1,5 +1,6 @@
   .example-card{
-      margin-top: 4px;
+      margin: 2rem;
+      border: 1px dashed rgb(45, 129, 28);
   }
   
   .example-header-image { 
@@ -12,14 +13,15 @@
 
   p {
       margin-top: 25px !important;
-      font-size: 20px;
+      margin-left: 55px !important;
+      font-size: 15px;
       font-weight: bold;
   }
   
   .img-article{
       height: 400px;
-      width: 95%;
-      margin: auto;
+      width: 90%;
+      margin-left: 55px;
   }
   
   .action-buttons{

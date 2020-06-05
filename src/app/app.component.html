@@ -27,7 +27,8 @@
     <mat-card-header>
       <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
       <mat-card-title class="title">{{article.title}}</mat-card-title>
-      <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
+      <mat-card-subtitle><span style="font-weight: bold;">Source :</span> {{article.source.name}}</mat-card-subtitle>
+      <mat-card-subtitle><span style="font-weight: bold;">Published at : </span>{{article.publishedAt | date :'short':'UTC'}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
     <mat-card-content>
